@@ -88,22 +88,22 @@ void SDLStartUp()
 	  	  /* Create our opengl context and attach it to our window */
 	maincontext = SDL_GL_CreateContext(mainwindow);
 
-	//GLenum rev;
-	//glewExperimental = GL_TRUE;
-	//rev = glewInit();
+	/*GLenum rev;
+	glewExperimental = GL_TRUE;
+	rev = glewInit();
 
-	//if (GLEW_OK != rev){
-	//std::cout << "Error: " << glewGetErrorString(rev) << std::endl;
-	//exit(1);
-	//} else {
-	//std::cout << "GLEW Init: Success!" << std::endl;
-	//}
+	if (GLEW_OK != rev){
+	std::cout << "Error: " << glewGetErrorString(rev) << std::endl;
+	exit(1);
+	} else {
+	std::cout << "GLEW Init: Success!" << std::endl;
+	}
 
 		  	  /* This makes our buffer swap syncronized with the monitor's vertical refresh */
 
-	SDL_GL_SetSwapInterval(1);
+	/*SDL_GL_SetSwapInterval(1);
 
-	/*bool quit = false;
+	bool quit = false;
 
 	Initialize();
 	Reshape(512, 512);
@@ -122,7 +122,8 @@ void SDLStartUp()
 	}
 	}
 
-	Finalize();*/
+	Finalize();
+	*/
 
 	  	  /* Delete our opengl context, destroy our window, and shutdown SDL */
 	SDL_GL_DeleteContext(maincontext);
